@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"> <!--tells the browser the language we are using to create the program-->
+  <head>
+ 
+   <meta charset="utf-8">		<!--tells the browser to parse markup into multiple languages by creating a meta-->
+   <title>Survey-form</title>
+   <link rel="stylesheet" href="styles.css">		<!--link the style(css) with the hmtl page-->
+   
+  </head>
+  <body>
+    
+    <h1 id="title">freeCodeCamp Survey</h1>
+	<p id="description">Thank you for taking your time to help us improve our services</p>
+	<form action="where to submit the information collected" method="method used to request the data" id="survey-form">
+    <fieldset>
+	    <label for="name" id="name-label">Name <input id="name" type="text" placeholder="enter your name" required/></label> 
+	    <label for="email" id="email-label">email <input id="email" type="email" placeholder="enter your email" required/></label>
+	    <label for="number" id="number-label">number <input id="number" type="number" min="1" max="10" pattern="[0-9]" placeholder="enter a number"/></label>  <!--pattern=[0-9]{min,max} numbers ranging from zero to nine with a min and a max-->
+		</fieldset>
+	  <fieldset>
+			<label for="dropdown">which one describe you best
+	      <select id="dropdown">
+	        <option value="">(select any option)</option>  <!--the value is so that the first empty value is not selected, selection start from one-->
+	        <option value="1">first option</option>
+		      <option value="2">second option</option>
+	      </select>
+		  </label>	
+	  </fieldset>
+	  <fieldset>
+	     <label> <input type="radio" value="radio" name="radio-option" class="inline"/> please select first</label> <!--for checkbox&radio we put those in an input while a dropdown we use a select and nest options-->
+	     <label> <input type="radio" value="radio" name="radio-option" class="inline"/> please select second</label>
+	  </fieldset>
+	  <fieldset>
+	    <label> <input type="checkbox" name="check" value="check_1" class="inline"/>first option</label>
+		<label> <input type="checkbox" name="check" value="check_2" class="inline"/>second option</label>
+	  </fieldset>
+	  <fieldset>
+	    <label for="comment">Comment  <textarea name="comments" id="comment" placeholder="please enter your comment in the field">  </textarea>
+	  </fieldset>
+	   <div class="btn">
+			 <button id="submit" type="submit" value="Submit">Submit</>  
+	<form>
+		 </div>
+	  
+  </body>
+</html>
+
+

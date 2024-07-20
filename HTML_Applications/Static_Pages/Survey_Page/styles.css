@@ -1,0 +1,76 @@
+/* Our style will go below here */
+:root{
+  --just-purple: #6e5688;
+  --just-light-blue:#5bcae9;
+}
+
+body{
+  background-color: #534582;
+  background-image: linear-gradient(62deg, var(--just-light-blue) 0%, var(--just-purple) 100%);
+  color: #1b1b32;
+  font-family: Tohoma;
+  height:100vh;
+  margin:0;
+}
+
+h1,p {
+  text-align:center;
+  margin:1em auto;
+}
+
+label{
+  display:block; 
+  margin:0.5rem 0;
+}
+
+form{
+  margin:0 auto;
+  width:60vw;
+  min-width:300px;
+  max-width:500px;
+  background-color:B5b1B1;
+}
+
+fieldset{
+  border:none;
+  
+}
+
+input, textarea{
+  background-color:#0a0a23;
+  border:1px solid #0a0a23;
+  color: #ffffff;
+  min-height: 2em;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  color: #ffffff;
+  min-height: 2em;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align:middle;
+}
+.btn{
+  display:flex;
+  justify-content:center;
+}
+.btn button{
+  display:flex;
+  background-color:rgb(66, 66, 117);
+  justify-content:center;
+  width:15%;
+  height:2vh;
+  border-radius:10%;
+  color:white;
+}
+.btn button:hover{
+  background-color:rgb(131, 218, 245);
+  
+}
